@@ -1,4 +1,5 @@
 {
+  "homepage": "https://maxwellvincent.github.io/cp-frame-email/",
   "name": "foundation-emails-template",
   "version": "1.0.0",
   "description": "Basic template for a Foundation for Emails project.",
@@ -8,6 +9,8 @@
   },
   "main": "gulpfile.babel.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "gulp",
     "build": "gulp --production",
     "zip": "gulp zip --production",
@@ -59,6 +62,5 @@
   },
   "bugs": {
     "url": "https://github.com/zurb/foundation-emails-template/issues"
-  },
-  "homepage": "https://github.com/zurb/foundation-emails-template#readme"
+  }
 }
